@@ -7,7 +7,7 @@ function Favorites() {
   async function loadFavorites() {
     const res = await fetch("/api/favorites");
     const data = await res.json();
-    setFavorites(data.favorites || []);
+    setFavorites(data || []);
     setLoading(false);
   }
 

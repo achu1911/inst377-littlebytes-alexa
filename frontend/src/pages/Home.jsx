@@ -11,7 +11,7 @@ function Home() {
     async function fetchFavorites() {
       const res = await fetch("/api/favorites");
       const data = await res.json();
-      setFavorites(data.favorites || []);
+      setFavorites(data || []);
       setLoading(false);
     }
     fetchFavorites();
@@ -42,7 +42,7 @@ function Home() {
       {/* Hero Image */}
       <div className="mt-12 mb-16">
         <img
-          src="/ratatouille-cooking.webp"
+          src="gith/ratatouille-cooking.webp"
           alt="Cozy kitchen illustration"
           className="w-full max-w-xl rounded-3xl shadow-lg border-4 border-parisRose/30"
         />
