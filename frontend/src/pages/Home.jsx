@@ -42,7 +42,7 @@ function Home() {
       {/* Hero Image */}
       <div className="mt-12 mb-16">
         <img
-          src="gith/ratatouille-cooking.webp"
+          src="/ratatouille-cooking.webp"
           alt="Cozy kitchen illustration"
           className="w-full max-w-xl rounded-3xl shadow-lg border-4 border-parisRose/30"
         />
