@@ -15,7 +15,7 @@ function Favorites() {
     const confirmDelete = window.confirm("Remove this recipe from favorites?");
     if (!confirmDelete) return;
 
-    const res = await fetch(`/api/favorites/${id}`, {
+    const res = await fetch(`/api/favorites?id=${id}`, {
       method: "DELETE",
     });
 
