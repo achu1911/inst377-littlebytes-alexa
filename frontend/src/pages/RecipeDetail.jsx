@@ -9,9 +9,9 @@ function RecipeDetail() {
 
   useEffect(() => {
     async function fetchMeal() {
-      const response = await fetch(`http://localhost:3001/api/recipe/${id}`);
+      const response = await fetch(`/api/recipe/${id}`);
       const data = await response.json();
-      setMeal(data.meal);
+      setMeal(data);
       setLoading(false);
     }
     fetchMeal();
@@ -43,7 +43,7 @@ function RecipeDetail() {
 
   // Save favorite
   async function saveFavorite() {
-    const res = await fetch("http://localhost:3001/api/favorites", {
+    const res = await fetch("/api/favorites", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

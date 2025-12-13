@@ -23,7 +23,7 @@ function Recipes() {
     setLoading(true);
 
     const query = ingredients.join(",");
-    const response = await fetch(`http://localhost:3001/api/recipes?ingredients=${query}`);
+    const response = await fetch(`/api/recipes?ingredients=${query}`);
     const data = await response.json();
 
     setRecipes(data.meals || []);

@@ -5,7 +5,7 @@ function Favorites() {
   const [loading, setLoading] = useState(true);
 
   async function loadFavorites() {
-    const res = await fetch("http://localhost:3001/api/favorites");
+    const res = await fetch("/api/favorites");
     const data = await res.json();
     setFavorites(data.favorites || []);
     setLoading(false);
@@ -15,7 +15,7 @@ function Favorites() {
     const confirmDelete = window.confirm("Remove this recipe from favorites?");
     if (!confirmDelete) return;
 
-    const res = await fetch(`http://localhost:3001/api/favorites/${id}`, {
+    const res = await fetch(`/api/favorites/${id}`, {
       method: "DELETE",
     });
 

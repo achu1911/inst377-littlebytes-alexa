@@ -9,7 +9,7 @@ function Home() {
   // Load favorites from backend
   useEffect(() => {
     async function fetchFavorites() {
-      const res = await fetch("http://localhost:3001/api/favorites");
+      const res = await fetch("/api/favorites");
       const data = await res.json();
       setFavorites(data.favorites || []);
       setLoading(false);
@@ -42,7 +42,7 @@ function Home() {
       {/* Hero Image */}
       <div className="mt-12 mb-16">
         <img
-          src="public/ratatouille-cooking.webp"
+          src="/ratatouille-cooking.webp"
           alt="Cozy kitchen illustration"
           className="w-full max-w-xl rounded-3xl shadow-lg border-4 border-parisRose/30"
         />
