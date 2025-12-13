@@ -8,14 +8,21 @@ function RecipeDetail() {
   const [activeTab, setActiveTab] = useState("ingredients");
 
   useEffect(() => {
-    async function fetchMeal() {
-      const response = await fetch(`/api/recipe/${id}`);
+  async function fetchMeal() {
+    try {
+      const response = await fetch(`/api/recipe?id=${id}`);
       const data = await response.json();
       setMeal(data);
+    } catch (err) {
+      console.error("Failed to load recipe", err);
+    } finally {
       setLoading(false);
     }
-    fetchMeal();
-  }, [id]);
+  }
+
+  fetchMeal();
+}, [id]);
+
 
   if (loading)
     return (
