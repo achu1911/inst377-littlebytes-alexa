@@ -95,7 +95,7 @@ function About() {
         <ul className="list-disc pl-6 space-y-2">
           <li><span className="font-semibold">React</span> for dynamic components and a clean UI</li>
           <li><span className="font-semibold">Tailwind CSS</span> for a warm, inviting aesthetic</li>
-          <li><span className="font-semibold">Express/Node.js</span> for the backend logic</li>
+          <li><span className="font-semibold">Node.js Serverless Functions (Vercel)</span> for the backend logic & API routing</li>
           <li><span className="font-semibold">Supabase</span> to store saved recipes and user data</li>
           <li><span className="font-semibold">React Router</span> for seamless multi-page navigation</li>
           <li><span className="font-semibold">TheMealDB API</span> for real recipe data</li>
