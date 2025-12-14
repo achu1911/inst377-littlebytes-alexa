@@ -1,3 +1,6 @@
+// Serverless API route to search recipes by ingredients
+// Uses TheMealDB and finds recipes that match ALL ingredients
+
 export default async function handler(req, res) {
   if (req.method !== "GET") {
     return res.status(405).json({ error: "Method not allowed" });

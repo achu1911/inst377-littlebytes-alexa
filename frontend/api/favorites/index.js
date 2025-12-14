@@ -1,3 +1,5 @@
+// Serverless API route to manage favorite recipes
+// Supports GET (retrieve favorites) and POST (save favorite)
 import { createClient } from "@supabase/supabase-js";
 
 const supabase = createClient(
@@ -28,7 +30,7 @@ export default async function handler(req, res) {
     return res.status(200).json({ success: true });
   }
 
-  // DELETE favorite  🔥 THIS IS THE FIX
+  // DELETE favorite  
   if (req.method === "DELETE") {
     const { id } = req.query;
 
