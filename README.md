@@ -12,9 +12,12 @@ Users can:
 
 This app is inspired by the warm, comforting aesthetic of my favorite movie, Ratatouille and Paris. The UI is intentionally calming, encouraging users to enjoy cooking rather than feel overwhelmed by it.
 
+**Live Demo (Vercel):**
+https://inst377-littlebytes-alexa-git-main-achu1911s-projects.vercel.app
+
 ---
 
-## Target Browsers  
+## Target Browsers ##
 LittleBytes is designed to work on all modern desktop browsers, including:
 
 - **Google Chrome (Recommended)**
@@ -52,7 +55,7 @@ The following section is intended for future developers who may maintain or want
 * Git
 
 1. Clone the Repository
-* git clone https://github.com/your-username/inst377-littlebytes-alexa.git
+* git clone https://github.com/achu1911/inst377-littlebytes-alexa.git
 * cd inst377-littlebytes-alexa
 
 2. Install Dependencies
@@ -122,7 +125,7 @@ DELETE /api/favorites?id=
 No automated tests are currently implemented. Manual testing was conducted thorugh browser interaction and API endpoint verification.
 
 ## Known Issues ##
-* Favorites are shared across all users right now. In the future, I do want to implement some sort of profile system so that each suer can have a unique database.
+* Favorites are shared across all users right now. In the future, I do want to implement some sort of profile system so that each user can have a unique database.
 * No offline support.
 * Limited error handling for API rate limits.
 
